@@ -1,0 +1,17 @@
+.footer {
+  height: 40px;
+  bottom: 0;
+  text-align: center;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__icon {
+    color: $brand-color;
+    margin: 20px;
+    font-size: 28px;
+  }
+}

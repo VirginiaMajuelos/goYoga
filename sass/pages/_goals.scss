@@ -1,0 +1,17 @@
+.section-goals {
+  height: 240px;
+
+  &__container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  &__icon {
+    color: $brand-color;
+    margin: 40px;
+    font-size: 48px;
+  }
+}

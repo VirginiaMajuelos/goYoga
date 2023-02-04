@@ -1,0 +1,74 @@
+.header {
+  background-image: url("../../assets/hero_index.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    height: 250px;
+  }
+
+  // &__container {
+  //   // @media screen and (max-width: 768px) {
+  //   //   max-width: 500px;
+  //   // }
+  //   // @media screen and (max-width: 320px) {
+  //   //   max-width: 400px;
+  //   // }
+  // }
+
+  &__title {
+    padding: 40px 70px;
+    text-shadow: 6px 6px 8px #000000;
+
+    &--principal {
+      margin-bottom: 30px;
+      font-size: 40px;
+      color: $light-grey;
+      font-weight: 100;
+      @media screen and (max-width: 768px) {
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+
+      @media screen and (max-width: 320px) {
+        font-size: 15px;
+      }
+    }
+
+    &--secundario {
+      font-size: 65px;
+      color: $light-grey;
+      font-weight: 500;
+
+      // @media screen and (min-width: 1024px) {
+      //   display: block;
+      //   white-space: nowrap;
+      //   border-right: 4px solid;
+      //   width: 26ch;
+
+      //   animation: typing 2s steps(26), blink 0.5s infinite step-end alternate;
+      // }
+      @media screen and (max-width: 768px) {
+        font-size: 50px;
+      }
+
+      @media screen and (max-width: 420px) {
+        font-size: 30px;
+      }
+    }
+
+    // @keyframes typing {
+    //   from {
+    //     width: 0;
+    //   }
+    // }
+    // @keyframes blink {
+    //   50% {
+    //     border-color: transparent;
+    //   }
+    // }
+  }
+}

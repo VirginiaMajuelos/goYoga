@@ -1,0 +1,19 @@
+.section-resumen {
+  background-color: $brand-color;
+  color: $brand-secondary;
+  text-align: center;
+  height: 830px;
+  padding: 20px;
+  &__container {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 70%;
+    // margin: 10px 20px;
+    box-shadow: 0 6px 12px 0 $brand-color;
+  }
+}

@@ -1,0 +1,25 @@
+/* MAIN */
+
+// 1. Configurations and helpers
+
+@import "abstracts/variables";
+
+// 2. Vendors
+
+// 3. Base stuff
+
+@import "base/base", "base/typography", "base/reset";
+
+//4. Layout
+
+@import "layout/header", "layout/footer", "layout/navigation";
+
+//5. Components
+
+@import "components/button";
+
+//6. Page-specific styles
+@import "pages/home", "pages/goals", "pages/resumen", "pages/maestres",
+  "pages/contact";
+
+//7. Themes
