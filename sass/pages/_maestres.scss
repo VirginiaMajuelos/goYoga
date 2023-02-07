@@ -1,10 +1,14 @@
 .section-maestres {
-  margin: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  margin: 20px;
+  text-align: center;
   &__container {
+    margin: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__images {
     display: flex;
     width: 900px;
     height: 530px;
@@ -23,5 +27,24 @@
       opacity: 1;
       filter: contrast(120%);
     }
+  }
+  &__list {
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 8px;
+      // margin: 40px;
+    }
+  }
+
+  span {
+    font-weight: 700;
   }
 }

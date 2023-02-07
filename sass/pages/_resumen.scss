@@ -2,18 +2,33 @@
   background-color: $brand-color;
   color: $brand-secondary;
   text-align: center;
-  height: 830px;
+  // height: 830px;
   padding: 20px;
   &__container {
     margin: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      margin: 10px;
+      padding: 5px;
+    }
+    @media screen and (max-width: 320px) {
+      flex-direction: column;
+    }
   }
 
   &__img {
     width: 70%;
     // margin: 10px 20px;
     box-shadow: 0 6px 12px 0 $brand-color;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+  @media screen and (max-width: 320px) {
+    height: auto;
   }
 }

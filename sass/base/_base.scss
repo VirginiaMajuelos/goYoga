@@ -57,10 +57,17 @@ a:hover {
   @media screen and (max-width: 320px) {
     font-size: 20px;
   }
-  &--resumen {
+  &--variable {
     font-size: 40px;
     color: $light-grey;
     margin: 20px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 20px;
+    }
   }
 }
 
