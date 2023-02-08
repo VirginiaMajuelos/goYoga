@@ -208,37 +208,90 @@ body {
 }
 
 .navbar {
+  padding: 0 20px;
   background-color: #1c3940;
   font-weight: 300;
-  font-family: 20px;
+  font-family: 18px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
 }
-.navbar__container {
-  width: 100%;
-  margin: 0 auto;
-  height: 70px;
+@media only screen and (max-width: 600px) {
+  .navbar__container {
+    display: none;
+  }
+}
+.navbar__container--desktop {
+  list-style: none;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 1rem;
+  justify-content: space-around;
+}
+.navbar__container--mobile li {
+  padding: 5px;
+  margin-left: 10px;
+  margin: 50px;
+  margin-bottom: 10px;
+}
+.navbar__container--mobile {
+  display: none;
+  position: absolute;
+  font-family: 20px;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+  background-color: #1c3940;
 }
 .navbar__item {
-  color: aliceblue;
+  color: #b4d9d5;
+  font-size: 20px;
   text-decoration: none;
 }
-.navbar__item--active {
-  text-decoration: underline;
-}
-.navbar__item:hover {
-  color: #014a42;
-}
-@media screen and (max-width: 764px) {
-  .navbar {
-    font-family: 16px;
+@media only screen and (max-width: 600px) {
+  .navbar__item {
+    font-size: 30px;
   }
-  .navbar__container {
-    height: 55px;
-    justify-content: space-evenly;
+}
+.navbar ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.navbar__hamburger {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+.navbar__hamburger div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.open .navbar__hamburger--bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .navbar__hamburger--bar2 {
+  opacity: 0;
+}
+.open .navbar__hamburger--bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+@media only screen and (max-width: 600px) {
+  .navbar__hamburger {
+    display: block;
   }
+}
+
+.open .navbar__container--mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .button {
@@ -302,7 +355,7 @@ body {
   background-color: #1c3940;
   color: #77a6a1;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0 80px 0;
 }
 .section-resumen__container {
   margin: 20px;
@@ -479,7 +532,7 @@ body {
   background-color: #1c3940;
   color: #77a6a1;
   text-align: center;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 @media screen and (max-width: 768px) {
   .section-contacto {
