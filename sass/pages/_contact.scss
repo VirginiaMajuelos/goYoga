@@ -1,18 +1,19 @@
 .section-contacto {
   background-color: $brand-color;
   color: $brand-secondary;
-  text-align: center;
-  //   height: 910px;
   padding: 50px 0;
+  text-align: center;
 
   @media screen and (max-width: 768px) {
-    // height: 1350px;
     padding-top: 10px;
   }
 
   &__container {
+    text-align: justify;
     margin: 30px;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
 
     div {
@@ -22,8 +23,6 @@
     &--list {
       list-style: none;
       font-size: 18px;
-      height: 180px;
-      margin: 40px;
 
       li {
         display: flex;
@@ -39,6 +38,22 @@
           font-size: 14px;
         }
       }
+    }
+  }
+}
+
+.box {
+  &__map {
+    width: 700px;
+    height: 300px;
+    @media screen and (max-width: 768px) {
+      width: 500px;
+      height: 250px;
+    }
+
+    @media screen and (max-width: 420px) {
+      width: 350px;
+      height: 180px;
     }
   }
 }
