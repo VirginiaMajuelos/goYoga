@@ -169,7 +169,7 @@ body {
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .header__title--principal {
     font-size: 15px;
   }
@@ -218,7 +218,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .navbar__container {
     display: none;
   }
@@ -227,7 +227,7 @@ body {
   width: 55px;
   height: 50px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .navbar__container--logo {
     display: none;
   }
@@ -260,7 +260,7 @@ body {
   font-size: 20px;
   text-decoration: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .navbar__item {
     font-size: 30px;
   }
@@ -292,7 +292,7 @@ body {
   -webkit-transform: rotate(45deg) translate(-6px, -8px);
   transform: rotate(45deg) translate(-6px, -8px);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .navbar__hamburger {
     display: block;
   }
@@ -356,7 +356,7 @@ body {
     height: auto;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .section-goals__icon {
     font-size: 20px;
   }
@@ -381,7 +381,7 @@ body {
     padding: 5px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .section-resumen__container {
     flex-direction: column;
   }
@@ -395,7 +395,7 @@ body {
     height: auto;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .section-resumen {
     height: auto;
   }
@@ -441,7 +441,7 @@ body {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 420px) {
   .section-maestres__list {
     font-size: 8px;
   }
@@ -566,12 +566,12 @@ body {
 }
 
 .box__map {
-  width: 700px;
+  width: 600px;
   height: 300px;
 }
 @media screen and (max-width: 768px) {
   .box__map {
-    width: 500px;
+    width: 450px;
     height: 250px;
   }
 }
