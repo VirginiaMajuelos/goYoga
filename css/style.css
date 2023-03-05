@@ -141,7 +141,7 @@ body {
 }
 
 .header {
-  background-image: url("../../assets/hero_index.jpg");
+  background-image: url("/assets/brand/hero_index.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -211,7 +211,7 @@ body {
   background-color: #1c3940;
   font-weight: 300;
   font-family: 18px;
-  height: 50px;
+  height: 60px;
 }
 .navbar__container {
   display: flex;
